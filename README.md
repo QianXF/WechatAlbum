@@ -1,4 +1,4 @@
 # WechatAlbum
 相册选择照片，仿微信相册
 
-https://github.com/zhahttps://github.com/zhaozepeng/AlbumImageSelecthttps://github.com/zhaozepeng/AlbumImageSelectttps://github.com/zhaozepeng/AlbumImageSelectozepeng/AlbumImageSelect
+本项目建立与https://github.com/zhaozepeng/AlbumImageSelect项目多基础上。

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/gq_main_A" >
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp"
+            android:src="@drawable/m_back" />
+
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/ivBack"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ivBack"
+            android:src="@drawable/bt_shanchu"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black" >
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+</LinearLayout>

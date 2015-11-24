@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 相册 -->
+    <color name="found_text_color">#353535</color>
+    <color name="found_description_color">#aaaaaa</color>
+    <color name="found_divide_color">#d9d9d9</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_blue">#ADD8E6</color>
+    <color name="title_bar_black">#21292b</color>
+    <color name="footer_bar_background">#dd17334B</color>
+<!--     <color name="button_normal">#45c01a</color> -->
+<!--     <color name="button_disable">#367325</color> -->
+    <color name="button_normal">#3399ff</color>
+    <color name="button_disable">#cccccc</color>
+    
+    <color name="take_photo_background">#353535</color>
+
+     <color name="gq_main_A">#70DB93 </color>
+    <!--<color name="gq_main_A">#17334B</color>-->
+    <!--<color name="gq_main_B">#688FA7</color>-->
+    <!--<color name="gq_main_C">#A3AEB6</color>-->
+    <!--<color name="gq_main_bg">#F0F0F0</color>-->
+    <!--<color name="gq_main_pupopbg">#66000000</color>-->
+    <!--<color name="gq_main_D">#71a6d3</color>-->
+    <!--<color name="gq_main_D_press">#3e5b74</color>-->
+    <!--<color name="gq_main_register">#3399FF</color>-->
+    <!--<color name="gq_main_register_press">#236FBB</color>-->
+    <!--<color name="gq_font_A">#333333</color>-->
+    <!--<color name="gq_font_B">#666666</color>-->
+    <!--<color name="gq_font_C">#999999</color>-->
+    <!--<color name="gq_font_D">#CCCCCC</color>-->
+    <!--<color name="gq_font_E">#0099FF</color>-->
+    <!--<color name="gq_font_Line">#E4E4E4</color>-->
+    <!--<color name="gq_blue">#03CBC0</color>-->
+    <!--<color name="line_divider">#E4E4E4</color>-->
+    <!--<color name="block_hot_user">#0099CB</color>-->
+    <!--<color name="block_hot_feed">#98CD03</color>-->
+    <!--<color name="block_hot_tag">#FE672E</color>-->
+    <!--<color name="wheel_timebtn_nor">#54a3fa</color>-->
+    <!--<color name="wheel_timebtn_pre">#CCCCCC</color>-->
+    <!--<color name="per_inf">#999999</color>-->
+    <!--<color name="myLightGray">#F2F2F2</color>-->
+    <!--<color name="horizontal_divider">#8f8f8f</color>-->
+    <!--<color name="horizontal_vertical">#8f8f8f</color>-->
+    <!--<color name="tran">#00000000</color>-->
+    <!--<color name="myLightGreen">#D1F3C0</color>-->
+    <!--<color name="myOrange">#FF8000</color>-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!--<color name="myDarkGray">#BBBBBB</color>-->
+    <!--<color name="myNaviBack">#EEEEEE</color>-->
+    <!--<color name="button_press">#33000000</color>-->
+    <!--<color name="itemsummary">#666666</color>-->
+    <!--<color name="line">#CCCCCC</color>-->
+    <!--<color name="titlesecond">#FAFAFA</color>-->
+    <!--<color name="orgPressed">#89B378</color>-->
+    <!--<color name="issuetip">#F7FAF5</color>-->
+    <!--<color name="red">#FF0000</color>-->
+    <!--<color name="pop_head">#333333</color>-->
+    <!--<color name="disabletext">#CCFFFFFF</color>-->
+    <!--<color name="line_light">#F4F4F4</color>-->
+
+</resources>

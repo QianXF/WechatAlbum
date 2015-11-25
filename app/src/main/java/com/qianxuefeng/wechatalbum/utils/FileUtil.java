@@ -6,7 +6,7 @@ import java.io.File;
 
 public class FileUtil {
 
-	public final static String ALBUM_PATH = "/guqu/GuQu";
+	public final static String ALBUM_PATH = "/album";
 	
 	/**
 	 * 获取图片存储路径

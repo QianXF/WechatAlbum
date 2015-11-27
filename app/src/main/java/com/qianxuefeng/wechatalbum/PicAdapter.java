@@ -15,9 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 实名认证时的图片选择适配
+ * 图片选择适配
  * 
- * @author DAI 2015.8.9
+ * @author Shwan 2015.8.9
  * 
  */
 public class PicAdapter extends BaseAdapter

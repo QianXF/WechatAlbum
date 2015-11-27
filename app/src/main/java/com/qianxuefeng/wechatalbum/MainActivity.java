@@ -22,12 +22,11 @@ import com.qianxuefeng.wechatalbum.album.PreviewImagesActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
- * 申请实名认证页面
- * 
- * @author DAI 2015.8.9
- * 
+ * 图片选择
+ *
+ * @author Shwan 2015.8.9
+ *
  */
 public class MainActivity extends Activity
 {
@@ -38,7 +37,7 @@ public class MainActivity extends Activity
 	/**
 	 * 最多选择图片张数
 	 */
-	private final static int MAX_PICS = 5;
+	private final static int MAX_PICS = 9;
 	private Context mContext;
 
 	@Override
@@ -60,13 +59,12 @@ public class MainActivity extends Activity
 				if (imgBmpList.get(position) == null)
 				{
 					Intent intent = new Intent(MainActivity.this, PickOrTakeImageActivity.class);
-					intent.putExtra(PickOrTakeImageActivity.EXTRA_NUMS, MAX_PICS);
+					intent.putExtra(PickOrTakeImageActivity.EXTRA_NUMS, MAX_PICS - Bitmp.getList().size());
 					startActivityForResult(intent, PickOrTakeImageActivity.PICK_IMAGE);
 				} else
 				{
 					Intent intent = new Intent(MainActivity.this, PreviewImagesActivity.class);
 					intent.putExtra(PreviewImagesActivity.EXTRA_CURRENT_PIC, position);
-					intent.putExtra(PreviewImagesActivity.EXTRA_TYPE, Bitmp.REAL_TYPE);
 					startActivityForResult(intent, PreviewImagesActivity.PREVIEW_IMG);
 				}
 			}

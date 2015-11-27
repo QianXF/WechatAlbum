@@ -61,8 +61,7 @@ public class PreviewImagesActivity extends Activity implements ViewPager.OnPageC
 
 	protected void initData() {
         currentPic = getIntent().getIntExtra(EXTRA_CURRENT_PIC, 0);
-        int extraType = getIntent().getIntExtra(EXTRA_TYPE, 0);
-        pickList = Bitmp.getList(extraType);
+        pickList = Bitmp.getList();
 
 //        tvTitle.setText((currentPic + 1) + "/" + Bitmp.pickList.size());
 

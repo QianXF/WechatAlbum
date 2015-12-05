@@ -85,6 +85,9 @@ public class PickBigImagesActivity extends Activity implements ViewPager.OnPageC
             @Override
             public void onClick(View v) {
                 isFinish = true;
+                if(picklist.size() == 0){
+                    picklist.add(allimages.get(currentPic).path);
+                }
                 finish();
             }
         });
@@ -97,7 +100,7 @@ public class PickBigImagesActivity extends Activity implements ViewPager.OnPageC
         allimages = (ArrayList<SingleImageModel>) getIntent().getSerializableExtra(EXTRA_DATA);
         picklist = (ArrayList<String>) getIntent().getSerializableExtra(EXTRA_ALL_PICK_DATA);
         if (picklist == null)
-            picklist = new ArrayList<String>();
+            picklist = new ArrayList<>();
         currentPic = getIntent().getIntExtra(EXTRA_CURRENT_PIC, 0);
 
         last_pics = getIntent().getIntExtra(EXTRA_LAST_PIC, 0);
@@ -119,7 +122,7 @@ public class PickBigImagesActivity extends Activity implements ViewPager.OnPageC
 
         adapter = new MyViewPagerAdapter();
         viewPager.setAdapter(adapter);
-        viewPager.setOnPageChangeListener(this);
+        viewPager.addOnPageChangeListener(this);
         viewPager.setCurrentItem(currentPic);
     }
 
@@ -186,7 +189,7 @@ public class PickBigImagesActivity extends Activity implements ViewPager.OnPageC
 
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
-            View view = LayoutInflater.from(PickBigImagesActivity.this).inflate(R.layout.widget_album_zoom_iamge, null);
+            View view = LayoutInflater.from(PickBigImagesActivity.this).inflate(R.layout.widget_album_zoom_iamge, container);
             final ZoomImageView zoomImageView = (ZoomImageView) view.findViewById(R.id.zoom_image_view);
 
             AlbumBitmapCacheHelper.getInstance().addPathToShowlist(getPathFromList(position));
@@ -250,9 +253,6 @@ public class PickBigImagesActivity extends Activity implements ViewPager.OnPageC
     @Override
     public void finish() {
         Intent data = new Intent();
-        if(picklist.size() == 0){
-        	picklist.add(allimages.get(currentPic).path);
-        }
         data.putExtra("pick_data", picklist);
         data.putExtra("isFinish", isFinish);
         setResult(RESULT_OK, data);
